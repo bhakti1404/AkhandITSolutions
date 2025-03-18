@@ -2360,6 +2360,13 @@ ul {
 .stats-counter .stats-item .purecounter {
   padding-right: 0;
 }
+.stats-counter .stats-item .purecounter::after {
+  content: "+";
+  margin-left: 5px; /* Adjust spacing if needed */
+  font-size: inherit;
+  color: inherit;
+}
+
 
 .stats-counter .stats-item i {
   font-size: 90px;
@@ -3214,7 +3221,7 @@ ul {
   padding: 10px 10px;
   display: block;
   border-radius: 3px;
-  text-align: left;
+  text-align: right;
   margin-bottom: 10px;
   overflow: hidden;
 }
